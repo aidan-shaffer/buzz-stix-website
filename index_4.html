@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buzz Stix — Pre-Workout, Pixie Stick Style</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZFFCM3FGQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PZFFCM3FGQ');
+</script>
+
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/logo-icon-180.png">
+
+<meta name="description" content="Buzz Stix packs a full pre-workout dose into a single powder stick. No shaker, no scoop, no mess — rip, pour, and go. Join the waitlist for early access.">
+<link rel="canonical" href="https://www.buzzstix.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Buzz Stix — Pre-Workout, Pixie Stick Style">
+<meta property="og:description" content="Full pre-workout dose, zero shaker. Rip it, pour it, send it. Join the waitlist for early access.">
+<meta property="og:url" content="https://www.buzzstix.com/">
+<meta property="og:image" content="https://www.buzzstix.com/og-image.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Buzz Stix — Pre-Workout, Pixie Stick Style">
+<meta name="twitter:description" content="Full pre-workout dose, zero shaker. Rip it, pour it, send it.">
+<meta name="twitter:image" content="https://www.buzzstix.com/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFFBF2;
+    --paper:#FFF3DD;
+    --bubblegum:#FF4FA0;
+    --sourblue:#29C4F5;
+    --grape:#8B5FE6;
+    --lemon:#FFD400;
+    --ink:#241533;
+    --white:#ffffff;
+    --display: 'Baloo 2', system-ui, sans-serif;
+    --body: 'Work Sans', system-ui, sans-serif;
+    --mono: 'Space Mono', monospace;
+    --active: var(--grape);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: var(--body);
+    background: var(--cream);
+    color: var(--ink);
+    overflow-x:hidden;
+  }
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit;}
+  button{font-family:inherit; cursor:pointer;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- SCALLOP DIVIDER (crimped wrapper motif) ---------- */
+  .scallop{
+    height:26px;
+    width:100%;
+    mask-image: radial-gradient(circle at 13px 0, transparent 12.5px, black 13px);
+    -webkit-mask-image: radial-gradient(circle at 13px 0, transparent 12.5px, black 13px);
+    mask-size: 26px 26px;
+    -webkit-mask-size: 26px 26px;
+    mask-repeat: repeat-x;
+    -webkit-mask-repeat: repeat-x;
+  }
+  .scallop.down{
+    mask-position: top;
+    -webkit-mask-position: top;
+  }
+  .scallop.up{
+    transform: rotate(180deg);
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position: sticky; top:0; z-index:50;
+    background: var(--cream);
+    border-bottom: 3px solid var(--ink);
+  }
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+    max-width:1180px; margin:0 auto;
+  }
+  .logo{
+    font-family: var(--display);
+    font-weight:800;
+    font-size:1.5rem;
+    letter-spacing: 0.5px;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo .dot{
+    width:12px; height:12px; border-radius:50%;
+    background: var(--grape);
+    box-shadow: 16px 0 0 var(--sourblue), 32px 0 0 var(--lemon);
+    margin-right:34px;
+  }
+  .nav-links{ display:flex; gap:28px; list-style:none; font-weight:600; font-size:0.95rem;}
+  .nav-links a{ text-decoration:none; position:relative; padding:4px 0;}
+  .nav-links a:hover{ color: var(--grape);}
+  .nav-cta{
+    background: var(--ink); color:var(--cream); border:none;
+    padding:10px 20px; border-radius:100px; font-weight:700; font-size:0.9rem;
+  }
+  .nav-cta:hover{ background:var(--grape); }
+  .nav-toggle{ display:none; background:none; border:none; font-size:1.6rem; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background: linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
+    padding: 64px 24px 0;
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:1180px; margin:0 auto;
+    display:grid; grid-template-columns: 1.1fr 0.9fr; gap:40px; align-items:center;
+  }
+  .eyebrow{
+    font-family:var(--mono); font-size:0.8rem; font-weight:700;
+    letter-spacing:2px; text-transform:uppercase;
+    color: var(--grape);
+    display:inline-flex; align-items:center; gap:8px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{ content:"⚡"; }
+  h1{
+    font-family: var(--display);
+    font-weight:800;
+    font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+    line-height: 0.98;
+    letter-spacing: -1px;
+  }
+  h1 .hl{ color: var(--grape); }
+  .hero p.lead{
+    font-size:1.15rem; line-height:1.6; color:#4a3a5c;
+    max-width:480px; margin: 22px 0 30px;
+  }
+  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    font-weight:700; font-size:1rem; padding:15px 28px; border-radius:100px;
+    border:3px solid var(--ink); text-decoration:none; display:inline-block;
+    transition: transform 0.15s ease;
+  }
+  .btn:hover{ transform: translateY(-2px); }
+  .btn-primary{ background: var(--grape); color:var(--white); }
+  .btn-secondary{ background:transparent; color:var(--ink); }
+
+  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  .stick{
+    position:relative; width:184px; height:468px;
+    filter: drop-shadow(8px 8px 0 var(--ink));
+  }
+  .sparkle-field{
+    position:absolute; top:92px; left:50%; transform:translateX(-50%);
+    width:170px; height:280px; pointer-events:none;
+  }
+  .sparkle{
+    position:absolute; border-radius:50%;
+    animation: fall 2.4s linear infinite;
+  }
+  @keyframes fall{
+    0%{ transform: translateY(0) rotate(0deg); opacity:0; }
+    10%{ opacity:1; }
+    100%{ transform: translateY(220px) translateX(var(--drift, 10px)) rotate(180deg); opacity:0; }
+  }
+
+  /* ---------- STRIP ---------- */
+  .strip{
+    background: var(--ink); color:var(--cream);
+    padding: 14px 0; overflow:hidden; white-space:nowrap;
+  }
+  .strip-track{
+    display:inline-flex; gap:40px; animation: scroll-left 22s linear infinite;
+    font-family:var(--mono); font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;
+  }
+  @keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+  /* ---------- SECTION SHARED ---------- */
+  section{ padding: 90px 0; }
+  .section-head{ max-width:640px; margin-bottom:52px; }
+  .section-head .eyebrow{ margin-bottom:14px; }
+  h2{
+    font-family: var(--display); font-weight:800;
+    font-size: clamp(2rem, 4vw, 3rem); letter-spacing:-0.5px; line-height:1.05;
+  }
+  .section-head p{ margin-top:16px; font-size:1.05rem; color:#4a3a5c; line-height:1.6; }
+
+  /* ---------- WHAT IS IT ---------- */
+  .what-grid{
+    display:grid; grid-template-columns: repeat(3,1fr); gap:24px;
+  }
+  .what-card{
+    background: var(--white); border:3px solid var(--ink); border-radius:24px;
+    padding:28px; box-shadow: 6px 6px 0 var(--ink);
+  }
+  .what-card .num{
+    font-family:var(--mono); font-weight:700; font-size:0.85rem;
+    color: var(--white); background: var(--active);
+    width:30px; height:30px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; margin-bottom:16px;
+    border:2px solid var(--ink);
+  }
+  .what-card h3{ font-family:var(--display); font-size:1.3rem; margin-bottom:10px; }
+  .what-card p{ font-size:0.95rem; line-height:1.6; color:#4a3a5c; }
+
+  /* ---------- FLAVORS ---------- */
+  .flavors{ background: var(--paper); }
+  .flavor-grid{
+    display:grid; grid-template-columns: repeat(5,1fr); gap:18px;
+  }
+  .flavor-card{
+    border-radius:20px; border:3px solid var(--ink); padding:20px 16px;
+    text-align:center; background:var(--white); cursor:pointer;
+    transition: transform 0.15s ease;
+  }
+  .flavor-card:hover, .flavor-card:focus-visible{ transform: translateY(-6px); outline:none; }
+  .flavor-card.active{ box-shadow: 6px 6px 0 var(--ink); }
+  .flavor-swatch{
+    width:56px; height:56px; border-radius:50%; margin:0 auto 14px;
+    border:3px solid var(--ink);
+  }
+  .flavor-card h4{ font-family:var(--display); font-size:1rem; margin-bottom:6px; }
+  .flavor-card p{ font-family:var(--mono); font-size:0.72rem; color:#6a5a80; text-transform:uppercase; letter-spacing:0.5px;}
+  .flavor-detail{
+    margin-top:36px; background:var(--white); border:3px solid var(--ink); border-radius:24px;
+    padding:32px; display:grid; grid-template-columns:auto 1fr; gap:28px; align-items:center;
+    box-shadow: 8px 8px 0 var(--ink);
+  }
+  .flavor-detail .fd-swatch{ width:80px; height:80px; border-radius:50%; border:4px solid var(--ink); }
+  .flavor-detail h3{ font-family:var(--display); font-size:1.6rem; }
+  .flavor-detail p{ color:#4a3a5c; margin-top:6px; line-height:1.6; }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .how-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:32px; }
+  .how-step{ text-align:center; }
+  .how-step .icon{
+    width:88px; height:88px; border-radius:50%; margin:0 auto 20px;
+    display:flex; align-items:center; justify-content:center; font-size:2.2rem;
+    border:3px solid var(--ink); background: var(--lemon);
+  }
+  .how-step:nth-child(2) .icon{ background: var(--sourblue); }
+  .how-step:nth-child(3) .icon{ background: var(--grape); }
+  .how-step h3{ font-family:var(--display); font-size:1.3rem; margin-bottom:8px; }
+  .how-step p{ color:#4a3a5c; font-size:0.95rem; line-height:1.6; max-width:260px; margin:0 auto; }
+
+  /* ---------- FACTS PANEL ---------- */
+  .facts{ background:var(--ink); color:var(--cream); }
+  .facts-inner{ display:grid; grid-template-columns: 1fr 1fr; gap:60px; align-items:center; }
+  .facts h2{ color:var(--cream); }
+  .facts .section-head p{ color:#c9bcd9; }
+  .facts-panel{
+    background:var(--cream); color:var(--ink); border-radius:20px; border:4px solid var(--lemon);
+    font-family:var(--mono); padding:28px 30px;
+  }
+  .facts-panel h3{ font-family:var(--display); font-size:1.5rem; border-bottom:8px solid var(--ink); padding-bottom:10px; margin-bottom:12px;}
+  .facts-row{ display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px solid #d8cbb0; font-size:0.85rem; }
+  .facts-row.bold{ font-weight:700; border-bottom:4px solid var(--ink); }
+  .facts-foot{ font-size:0.7rem; margin-top:14px; color:#6a5a80; line-height:1.5; }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:24px; }
+  .testi-card{
+    background:var(--white); border:3px solid var(--ink); border-radius:20px; padding:26px;
+  }
+  .testi-card .stars{ color: var(--lemon); -webkit-text-stroke: 1px var(--ink); font-size:1.1rem; margin-bottom:12px; }
+  .testi-card p{ font-size:0.95rem; line-height:1.6; margin-bottom:16px; }
+  .testi-card .who{ font-family:var(--mono); font-size:0.78rem; color:#6a5a80; }
+
+  /* ---------- WAITLIST ---------- */
+  .waitlist{
+    background: var(--grape); text-align:center; color:var(--white);
+  }
+  .waitlist h2{ color:var(--white); }
+  .waitlist .section-head{ margin:0 auto 36px; }
+  .waitlist-form{
+    display:flex; flex-direction:column; gap:12px; max-width:460px; margin:0 auto;
+  }
+  .waitlist-form .row{
+    display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+  }
+  .waitlist-form input{
+    flex:1; min-width:150px; padding:15px 20px; border-radius:100px; border:3px solid var(--ink);
+    font-family:var(--body); font-size:1rem;
+  }
+  .waitlist-form input:focus-visible{ outline:3px solid var(--ink); outline-offset:2px; }
+  .waitlist-form button{
+    background:var(--ink); color:var(--white); border:3px solid var(--ink);
+    padding:15px 26px; border-radius:100px; font-weight:700;
+  }
+  .waitlist-form button:hover{ background:var(--lemon); color:var(--ink); }
+  .waitlist-msg{ margin-top:16px; font-family:var(--mono); font-size:0.85rem; min-height:20px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{ background: var(--ink); color:#c9bcd9; padding:50px 0 30px; }
+  .footer-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:30px; }
+  .footer-logo{ font-family:var(--display); font-weight:800; color:var(--cream); font-size:1.3rem; }
+  .footer-links{ display:flex; gap:24px; list-style:none; font-size:0.9rem; }
+  .disclaimer{
+    margin-top:34px; padding-top:24px; border-top:1px solid #3d2b52;
+    font-size:0.72rem; line-height:1.6; color:#8a7a9d; max-width:760px;
+  }
+
+  /* ---------- REVEAL ---------- */
+  .reveal{ opacity:0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px){
+    .hero-inner{ grid-template-columns:1fr; }
+    .hero-visual{ order:-1; margin-bottom:10px; }
+    .what-grid, .flavor-grid, .how-grid, .testi-grid{ grid-template-columns: repeat(2,1fr); }
+    .facts-inner{ grid-template-columns:1fr; }
+    .nav-links{ display:none; }
+    .nav-toggle{ display:block; }
+  }
+  @media (max-width: 560px){
+    .what-grid, .flavor-grid, .how-grid, .testi-grid{ grid-template-columns: 1fr; }
+    .flavor-detail{ grid-template-columns:1fr; text-align:center; }
+    .facts-inner{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span class="dot"></span>BUZZ STIX</div>
+    <ul class="nav-links">
+      <li><a href="#flavors">Flavors</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <button class="nav-cta" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Join Waitlist</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Pre-workout, reinvented</div>
+      <h1>Rip it.<br>Pour it.<br><span class="hl">Send it.</span></h1>
+      <p class="lead">Buzz Stix packs a full pre-workout dose into a single powder stick. No shaker, no scoop, no 2pm crash — just tear, pour, and get after it.</p>
+      <div class="hero-ctas">
+        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="#flavors" class="btn btn-secondary">See Flavors</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="stick">
+        <svg viewBox="0 0 200 520" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <!-- straw shaft -->
+          <rect x="93" y="108" width="14" height="384" rx="7" fill="#FFFDF7" stroke="#241533" stroke-width="3"/>
+          <!-- twisted candy stripe -->
+          <path d="M100,116 C108,141 92,166 100,191 S108,241 100,266 S92,316 100,341 S108,391 100,416 S92,461 100,486"
+                fill="none" stroke="#8B5FE6" stroke-width="5" stroke-linecap="round"/>
+          <!-- flat heat-sealed bottom -->
+          <rect x="86" y="480" width="28" height="16" rx="4" fill="#241533"/>
+          <!-- folded paper flag header -->
+          <g transform="rotate(-7 100 84)">
+            <rect x="62" y="52" width="76" height="64" rx="10" fill="#8B5FE6" stroke="#241533" stroke-width="3"/>
+            <path d="M66,100 L134,100" stroke="#241533" stroke-width="2" stroke-dasharray="4 4" opacity="0.5"/>
+            <text x="100" y="80" text-anchor="middle" font-family="'Baloo 2', system-ui, sans-serif" font-weight="800" font-size="21" fill="#FFFBF2">BUZZ</text>
+            <text x="100" y="103" text-anchor="middle" font-family="'Baloo 2', system-ui, sans-serif" font-weight="800" font-size="21" fill="#FFFBF2">STIX</text>
+          </g>
+        </svg>
+        <div class="sparkle-field" id="sparkleField"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip" style="margin-top:60px;">
+    <div class="strip-track">
+      <span>0G SUGAR</span><span>★</span><span>150MG CAFFEINE</span><span>★</span><span>NO SHAKER NEEDED</span><span>★</span><span>FITS IN YOUR POCKET</span><span>★</span>
+      <span>0G SUGAR</span><span>★</span><span>150MG CAFFEINE</span><span>★</span><span>NO SHAKER NEEDED</span><span>★</span><span>FITS IN YOUR POCKET</span><span>★</span>
+    </div>
+  </div>
+</section>
+
+<section id="what">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">What it is</div>
+      <h2>Same pump. Zero mess.</h2>
+      <p>You loved pixie sticks as a kid. Now they're doing your pre-workout job — full dose of the stuff that actually works, in a wrapper you can rip open with your teeth on the way to the rack.</p>
+    </div>
+    <div class="what-grid">
+      <div class="what-card reveal">
+        <div class="num">1</div>
+        <h3>Full dose, one stick</h3>
+        <p>Every stick is dosed exactly like a scoop from the tub — just pre-measured so you never eyeball it again.</p>
+      </div>
+      <div class="what-card reveal">
+        <div class="num">2</div>
+        <h3>Water optional</h3>
+        <p>Dump it in your bottle, or dump it straight on your tongue. It dissolves fast and it's built to taste good either way.</p>
+      </div>
+      <div class="what-card reveal">
+        <div class="num">3</div>
+        <h3>Gym-bag proof</h3>
+        <p>No tub, no shaker, no clumping. Toss a handful of sticks in your bag and you're covered for the week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="scallop down" style="background:var(--paper); color:var(--cream);"></div>
+
+<section class="flavors" id="flavors">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Flavors</div>
+      <h2>Pick your buzz.</h2>
+      <p>Five flavors, five moods. Tap one to see what's inside.</p>
+    </div>
+    <div class="flavor-grid" id="flavorGrid">
+      <!-- filled by JS -->
+    </div>
+    <div class="flavor-detail reveal" id="flavorDetail"></div>
+  </div>
+</section>
+
+<div class="scallop up" style="background:var(--paper);"></div>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">How it works</div>
+      <h2>Three steps. That's it.</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-step reveal">
+        <div class="icon">✂️</div>
+        <h3>Rip</h3>
+        <p>Tear the top off. No opener, no tools, no shaker bottle to wash later.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="icon">🥤</div>
+        <h3>Pour</h3>
+        <p>Straight on your tongue or into water — either way it's dissolved in seconds.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="icon">🏋️</div>
+        <h3>Send it</h3>
+        <p>Feel it kick in around minute 15. Now go hit that PR.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="facts" id="facts">
+  <div class="wrap">
+    <div class="facts-inner">
+      <div class="section-head reveal" style="margin-bottom:0;">
+        <div class="eyebrow">What's inside</div>
+        <h2>No mystery blend. No filler.</h2>
+        <p>Just the stuff that's proven to work, dosed the same every single stick. Read the label — we're not hiding anything behind "proprietary."</p>
+      </div>
+      <div class="facts-panel reveal">
+        <h3>Buzz Facts</h3>
+        <div class="facts-row bold"><span>Serving Size</span><span>1 Stick (7g)</span></div>
+        <div class="facts-row"><span>Calories</span><span>5</span></div>
+        <div class="facts-row"><span>Sugar</span><span>0g</span></div>
+        <div class="facts-row"><span>Caffeine Anhydrous</span><span>150mg</span></div>
+        <div class="facts-row"><span>Beta-Alanine</span><span>1.6g</span></div>
+        <div class="facts-row"><span>L-Citrulline</span><span>2g</span></div>
+        <div class="facts-row"><span>Vitamin B6 / B12</span><span>100% DV</span></div>
+        <div class="facts-foot">These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare provider before use, especially if sensitive to caffeine.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Reviews</div>
+      <h2>What the gym is saying.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Tastes like a treat, hits like a truck. I keep sticks in every bag I own now."</p>
+        <div class="who">— Early tester, powerlifting</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"I stopped bringing my shaker to the gym. Rip, pour, done. Feels illegal how easy it is."</p>
+        <div class="who">— Early tester, CrossFit</div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Blue Razz Blast lives in my glovebox now. Zero crash, way less sugar than what I was drinking before."</p>
+        <div class="who">— Early tester, running</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="waitlist" id="waitlist">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" style="color:var(--white);">Coming soon</div>
+      <h2>Be first to rip one open.</h2>
+      <p style="color:#ffe3f1;">We're finishing up flavor testing now. Drop your email and we'll send you first access plus a launch discount.</p>
+    </div>
+    <form class="waitlist-form" id="waitlistForm">
+      <div class="row">
+        <input type="text" placeholder="First name" required aria-label="First name" id="firstName">
+        <input type="text" placeholder="Last name" required aria-label="Last name" id="lastName">
+      </div>
+      <div class="row">
+        <input type="email" placeholder="you@email.com" required aria-label="Email address" id="email">
+        <button type="submit">Join Waitlist</button>
+      </div>
+    </form>
+    <div class="waitlist-msg" id="waitlistMsg"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-logo">BUZZ STIX</div>
+      <ul class="footer-links">
+        <li><a href="#flavors">Flavors</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#facts">Facts</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="disclaimer">
+      Buzz Stix is a dietary supplement. Not intended for use by anyone under 18, or by those who are pregnant, nursing, or sensitive to caffeine. Consult your physician before use. Keep out of reach of children. © 2026 Buzz Stix. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---------- Flavor data ----------
+  const flavors = [
+    { name:"Blue Razz Blast", color:"#29C4F5", note:"Sour Blue", desc:"Tart raspberry up front, sweet finish. The one that started it all — our #1 tester pick." },
+    { name:"Cherry Bomb Rush", color:"#FF4FA0", note:"Bubblegum", desc:"Bold black cherry with a candy-shop finish. Built for people who like their pre-workout loud." },
+    { name:"Grape Gainz", color:"#8B5FE6", note:"Grape", desc:"Deep grape, no artificial bite. Smooth enough to drink straight off the stick." },
+    { name:"Lemon Lightning", color:"#FFD400", note:"Lemon", desc:"Sharp, citrusy, wakes you up before the caffeine even kicks in." },
+    { name:"Watermelon Warp", color:"#FF7A9C", note:"Watermelon", desc:"Juicy and light — the flavor for people who think pre-workout usually tastes like a chemistry set." },
+  ];
+
+  const grid = document.getElementById('flavorGrid');
+  const detail = document.getElementById('flavorDetail');
+
+  function renderDetail(f){
+    detail.innerHTML = `
+      <div class="fd-swatch" style="background:${f.color};"></div>
+      <div>
+        <h3>${f.name}</h3>
+        <p>${f.desc}</p>
+      </div>`;
+  }
+
+  flavors.forEach((f, i) => {
+    const card = document.createElement('div');
+    card.className = 'flavor-card' + (i===0 ? ' active' : '');
+    card.tabIndex = 0;
+    card.innerHTML = `
+      <div class="flavor-swatch" style="background:${f.color};"></div>
+      <h4>${f.name}</h4>
+      <p>${f.note}</p>`;
+    card.addEventListener('click', () => selectFlavor(i));
+    card.addEventListener('keydown', e => { if(e.key==='Enter' || e.key===' '){ e.preventDefault(); selectFlavor(i);} });
+    grid.appendChild(card);
+  });
+
+  function selectFlavor(i){
+    document.querySelectorAll('.flavor-card').forEach((c,idx) => c.classList.toggle('active', idx===i));
+    document.documentElement.style.setProperty('--active', flavors[i].color);
+    renderDetail(flavors[i]);
+  }
+  renderDetail(flavors[0]);
+
+  // ---------- Sparkle pour animation ----------
+  const field = document.getElementById('sparkleField');
+  const sparkleColors = ['#FF4FA0','#29C4F5','#FFD400','#8B5FE6'];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if(!reduceMotion && field){
+    setInterval(() => {
+      const s = document.createElement('div');
+      const size = 4 + Math.random()*5;
+      s.className = 'sparkle';
+      s.style.width = size+'px';
+      s.style.height = size+'px';
+      s.style.left = (65 + Math.random()*40) + 'px';
+      s.style.background = sparkleColors[Math.floor(Math.random()*sparkleColors.length)];
+      s.style.setProperty('--drift', (Math.random()*40-20)+'px');
+      s.style.animationDuration = (1.8 + Math.random()*1.2)+'s';
+      field.appendChild(s);
+      setTimeout(() => s.remove(), 3200);
+    }, 220);
+  }
+
+  // ---------- Waitlist form ----------
+  // Paste the Web App URL you get from deploying the Apps Script (see setup notes) below.
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzxr7x3eVDJPJ0WZr7ntNq-ef4Vg-FqH8OEp3-Xs5xSkZ104zdrkT0lkcRdpxmjwyaJ/exec";
+
+  document.getElementById('waitlistForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const msg = document.getElementById('waitlistMsg');
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const submitBtn = this.querySelector('button[type="submit"]');
+
+    if(GOOGLE_SCRIPT_URL.includes("PASTE_YOUR")){
+      msg.textContent = "Form isn't connected yet — add your Apps Script URL in the code.";
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Joining...";
+
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors', // Apps Script web apps don't return readable CORS responses from the browser
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ firstName, lastName, email })
+    })
+    .then(() => {
+      msg.textContent = "You're on the list! Keep an eye on your inbox 🎉";
+      this.reset();
+    })
+    .catch(() => {
+      msg.textContent = "Something went wrong — mind trying again?";
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Join Waitlist";
+    });
+  });
+
+  // ---------- Mobile nav (simple: scroll cta only, links hidden on mobile) ----------
+
+  // ---------- Reveal on scroll ----------
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
